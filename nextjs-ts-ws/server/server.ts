@@ -1,4 +1,4 @@
-import { NODE_PORT, IS_DEVELOPMENT } from '../env';
+import { NODE_PORT, IS_DEVELOPMENT } from '../config/env';
 
 import * as path from 'path';
 import * as next from 'next';
@@ -11,7 +11,7 @@ import { createServer } from 'http';
 
 const app = next({
   dev: IS_DEVELOPMENT,
-  dir: path.join(process.cwd(), 'src', 'client'),
+  dir: path.join(process.cwd(), 'client'),
 });
 
 app

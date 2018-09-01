@@ -3,7 +3,7 @@ import { PubSub, ApolloServer } from 'apollo-server-express';
 
 import schema from './graphql/schema';
 import { Server } from 'http';
-import { IS_DEVELOPMENT } from '../env';
+import { IS_DEVELOPMENT } from '../config/env';
 
 export const pubsub = new PubSub();
 

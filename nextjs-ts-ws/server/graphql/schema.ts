@@ -31,9 +31,9 @@ export default new GraphQLSchema({
   subscription,
 });
 
-// const output = { counter: -1 };
+const output = { counter: -1 };
 
-// setInterval(() => {
-//   ++output.counter;
-//   pubsub.publish('PING', ++output.counter);
-// }, 1000);
+setInterval(() => {
+  ++output.counter;
+  pubsub.publish('PING', ++output.counter);
+}, 1000);
